@@ -87,7 +87,7 @@ if primer_numero > segundo_numero:
 elif primer_numero < segundo_numero:
     resultado = f"El numero {primer_numero} es menor a {segundo_numero}"
 
-#print(resultado)
+print(resultado)
 
 """
 Ejercicio 022
@@ -130,6 +130,56 @@ resultado = f"El numero maximo entre {primer_numero}, {segundo_numero} y {tercer
 
 print(resultado)
 
+"""
+Ejercicio 024
+
+Para acceder a cierta atraccion, es necesario cumplir con dos requisitos:
+tener al menos 10 años de edad y medir mas de 1,60 metros
+(Ojo, tener en cuenta las palabras: mas , al menos y sobre todo la letra y)
+
+Escribir un programa en Python que solicite al usuario su edad y altura
+que determine si cumple con los requisitos para subir a la atraccion
+Si cumple con ambos requisitos, el programa debe imprimir "¡Puede acceder!" en la pantalla
+Si no cumple con algun requisito, el programa debe imprimri un mensaje que indique el motivo por el cual no puede subir  
+"""
+
+EDAD_MINIMA_INGRESO = 10
+ESTATURA_MINIMA_INGRESO = 1.60
+edad = int(input("Ingrese su edad: ")) 
+estatura = float(input("Ingrese su estatura en metros: "))
+
+if (edad >= EDAD_MINIMA_INGRESO) and (estatura > ESTATURA_MINIMA_INGRESO):
+    print("¡Puede acceder!")
+else:
+    if not(edad >= 10):
+        print("Lo siento, eres demasiado joven para acceder.")
+    
+    if not(estatura > ESTATURA_MINIMA_INGRESO):
+            print("Lo siento, eres demasiado bajo para acceder.")
+
+"""
+Ejercicio 025
+
+Para acceder a cierta atraccion, es necesario cumplir con dos requisitos:
+ser mayor de 6 años de edad o medir mas de 1,50 metros
+(Ojo, tener en cuenta las palabras: mas y sobre todo la letra o)
+
+Escribir un programa en Python que solicite al usuario su edad y altura
+que determine si cumple con los requisitos para subir a la atraccion
+Si cumple con al menos algun requisito, el programa debe imprimir "¡Puede acceder!" en la pantalla
+Si no cumple, el programa debe imprimir un mensaje que indique el motivo por el cual no puede subir  
+"""            
+
+EDAD_MINIMA_INGRESO = 7
+ESTATURA_MINIMA_INGRESO = 1.50
+edad = int(input("Ingrese su edad: ")) 
+estatura = float(input("Ingrese su estatura en metros: "))
+
+if (edad >= EDAD_MINIMA_INGRESO) or (estatura > ESTATURA_MINIMA_INGRESO):
+    print("¡Puede acceder!")
+else:
+    print("Lo siento, eres demasiado joven para acceder.")
+    print("Lo siento, eres demasiado bajo para acceder.")
 
 
 
