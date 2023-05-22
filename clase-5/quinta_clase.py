@@ -7,44 +7,44 @@ programa debe mostrar el numero 3 como el menor, el numero 7 como el mayor y el 
 como el que esta en el medio 
 """
 
-# primer_numero = int(input("Ingrese el primer numero: "))
-# segundo_numero = int(input("Ingrese el segundo numero: "))
-# tercer_numero = int(input("Ingrese el tercer numero: "))
+primer_numero = int(input("Ingrese el primer numero: "))
+segundo_numero = int(input("Ingrese el segundo numero: "))
+tercer_numero = int(input("Ingrese el tercer numero: "))
 
-# mayor = int() 
-# medio = int()
-# menor = int()
+mayor = int() 
+medio = int()
+menor = int()
 
-# if primer_numero > segundo_numero and primer_numero > tercer_numero:
-#     mayor = primer_numero
-#     if segundo_numero > tercer_numero:
-#         menor = tercer_numero
-#         medio = segundo_numero
-#     else:
-#         menor = segundo_numero 
-#         medio = tercer_numero
+if primer_numero > segundo_numero and primer_numero > tercer_numero:
+    mayor = primer_numero
+    if segundo_numero > tercer_numero:
+        menor = tercer_numero
+        medio = segundo_numero
+    else:
+        menor = segundo_numero 
+        medio = tercer_numero
 
-# if segundo_numero > primer_numero and segundo_numero > tercer_numero:
-#     mayor = segundo_numero
-#     if primer_numero > tercer_numero:
-#         menor = tercer_numero
-#         medio = primer_numero
-#     else:
-#         menor = primer_numero 
-#         medio = tercer_numero
+if segundo_numero > primer_numero and segundo_numero > tercer_numero:
+    mayor = segundo_numero
+    if primer_numero > tercer_numero:
+        menor = tercer_numero
+        medio = primer_numero
+    else:
+        menor = primer_numero 
+        medio = tercer_numero
 
-# if tercer_numero > primer_numero and tercer_numero > segundo_numero:
-#     mayor = tercer_numero
-#     if primer_numero > segundo_numero:
-#         menor = segundo_numero
-#         medio = primer_numero
-#     else:
-#         menor = primer_numero 
-#         medio = segundo_numero
+if tercer_numero > primer_numero and tercer_numero > segundo_numero:
+    mayor = tercer_numero
+    if primer_numero > segundo_numero:
+        menor = segundo_numero
+        medio = primer_numero
+    else:
+        menor = primer_numero 
+        medio = segundo_numero
 
-# print(f"El menor numero es {menor}")
-# print(f"El numero del medio es {medio}")
-# print(f"El mayor numero es {mayor}")
+print(f"El menor numero es {menor}")
+print(f"El numero del medio es {medio}")
+print(f"El mayor numero es {mayor}")
 
 """
 Ejercicio 027
