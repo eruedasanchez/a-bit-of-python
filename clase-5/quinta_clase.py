@@ -85,4 +85,54 @@ else:
         else:
             print(f"{nombre} no esta en edad de jubilarse")
 
+"""
+Crear un programa que pida un numero de mes (ejemplo 4) y escriba el nombre del mes
+en letras ("abril"). Verificar que el mes sea valido e informar en caso de que no lo
+sea.
+"""
 
+import random    # importo el modulo random
+
+NUM_ENERO = 1
+NUM_FEBRERO = 2
+NUM_MARZO = 3
+NUM_ABRIL = 4
+NUM_MAYO = 5
+NUM_JUNIO = 6
+NUM_JULIO = 7
+NUM_AGOSTO = 8
+NUM_SEPTIEMBRE = 9
+NUM_OCTUBRE = 10
+NUM_NOVIEMBRE = 11
+NUM_DICIEMBRE = 12
+
+# numero = int(input("Ingrese un numero: "))
+
+numero = random.randint(1,12) # generacion de un numero aleatorio entre 1 y 12 ambos inclusive
+
+if numero == NUM_ENERO:
+    print("El mes ingresado es enero")
+elif numero == NUM_FEBRERO:
+    print("El mes ingresado es febrero")
+elif numero == NUM_MARZO:
+    print("El mes ingresado es marzo")
+elif numero == NUM_ABRIL:
+    print("El mes ingresado es abril")
+elif numero == NUM_MAYO:  
+    print("El mes ingresado es mayo")
+elif numero == NUM_JUNIO:  
+    print("El mes ingresado es junio")
+elif numero == NUM_JULIO:  
+    print("El mes ingresado es julio")
+elif numero == NUM_AGOSTO:  
+    print("El mes ingresado es agosto")
+elif numero == NUM_SEPTIEMBRE:  
+    print("El mes ingresado es septiembre")
+elif numero == NUM_OCTUBRE:  
+    print("El mes ingresado es octubre")
+elif numero == NUM_NOVIEMBRE:  
+    print("El mes ingresado es noviembre")
+elif numero == NUM_DICIEMBRE:  
+    print("El mes ingresado es diciembre")
+else:
+    print("El mes ingresado es invalido")
