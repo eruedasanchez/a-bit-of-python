@@ -12,27 +12,27 @@ Escribir un programa que reciba un importe e informe:
 el descuento y el precio neto a cobrar, con mensajes aleatorios.
 """
 
-# CINCO_MIL_QUINIENTOS = 5500.0
-# DIEZ_MIL = 10000.0
+CINCO_MIL_QUINIENTOS = 5500.0
+DIEZ_MIL = 10000.0
 
-# CUATRO_PUNTO_CINCO_PORCIENTO = 0.045
-# OCHO_PORCIENTO = 0.08
-# DIEZ_PUNTO_CINCO_PORCIENTO = 0.105
+CUATRO_PUNTO_CINCO_PORCIENTO = 0.045
+OCHO_PORCIENTO = 0.08
+DIEZ_PUNTO_CINCO_PORCIENTO = 0.105
 
-# importe = float(input("Ingrese un importe: "))
+importe = float(input("Ingrese un importe: "))
 
-# if importe > 0:
-#     if importe < CINCO_MIL_QUINIENTOS:
-#         descuento = importe * CUATRO_PUNTO_CINCO_PORCIENTO  
-#     elif importe <= DIEZ_MIL:
-#         descuento = importe * OCHO_PORCIENTO  
-#     else:
-#         descuento = importe * DIEZ_PUNTO_CINCO_PORCIENTO  
+if importe > 0:
+    if importe < CINCO_MIL_QUINIENTOS:
+        descuento = importe * CUATRO_PUNTO_CINCO_PORCIENTO  
+    elif importe <= DIEZ_MIL:
+        descuento = importe * OCHO_PORCIENTO  
+    else:
+        descuento = importe * DIEZ_PUNTO_CINCO_PORCIENTO  
     
-#     precio_neto = importe - descuento
-#     print(f"Ingreso un importe de ${importe}.\nPor lo tanto, obtiene un descuento de ${descuento} y el precio neto es de ${precio_neto}")
-# else:
-#     print("ingrese un valor mayor a cero (0)")
+    precio_neto = importe - descuento
+    print(f"Ingreso un importe de ${importe}.\nPor lo tanto, obtiene un descuento de ${descuento} y el precio neto es de ${precio_neto}")
+else:
+    print("ingrese un valor mayor a cero (0)")
 
 """
 Ejercicio 030
@@ -44,20 +44,20 @@ La computadora debe indicar si el mayor es divisible por el menor.
 el resto de la division entre a y b es 0)
 """
 
-# a = int(input("Ingrese el primer numero: "))
-# b = int(input("Ingrese el segundo numero: "))
+a = int(input("Ingrese el primer numero: "))
+b = int(input("Ingrese el segundo numero: "))
 
-# if a > b:
-#     if a % b == 0:
-#         print(f"El numero {a} es divisible por {b}")
-#     else:
-#         print(f"El numero {a} no es divisible por {b}")
-# elif b % a == 0:
-#         print(f"El numero {b} es divisible por {a}")
-# else:
-#         print(f"El numero {b} no es divisible por {a}")
+if a > b:
+    if a % b == 0:
+        print(f"El numero {a} es divisible por {b}")
+    else:
+        print(f"El numero {a} no es divisible por {b}")
+elif b % a == 0:
+        print(f"El numero {b} es divisible por {a}")
+else:
+        print(f"El numero {b} no es divisible por {a}")
 
-# from random import randint # (otra manera de importar el modulo random y llamar a randint)
+from random import randint # (otra manera de importar el modulo random y llamar a randint)
 
 
 """
@@ -67,22 +67,22 @@ Escribir un programa que lea numeros enteros hasta que se ingrese un 0, y muestr
 de los numeros ingresados
 """
 
-# CERO = 0
-# numero = int(input("Ingrese un numero entero: "))
-# cant_ingresados = 0
-# suma_ingresados = 0
+CERO = 0
+numero = int(input("Ingrese un numero entero: "))
+cant_ingresados = 0
+suma_ingresados = 0
 
-# while numero != CERO:
-#     cant_ingresados += 1
-#     suma_ingresados += numero
-#     numero = int(input("Ingrese un numero entero: "))
+while numero != CERO:
+    cant_ingresados += 1
+    suma_ingresados += numero
+    numero = int(input("Ingrese un numero entero: "))
 
-# if cant_ingresados != CERO:
-#     promedio = suma_ingresados / cant_ingresados
-# else:
-#     promedio = 0
+if cant_ingresados != CERO:
+    promedio = suma_ingresados / cant_ingresados
+else:
+    promedio = 0
 
-# print(f"Se ingresaron {cant_ingresados} numeros hasta la primera aparicion de un 0.\n La suma de los numeros ingresados es igual a {suma_ingresados}\n Por ultimo, el promedio de los numeros ingresados es igual a {promedio}")
+print(f"Se ingresaron {cant_ingresados} numeros hasta la primera aparicion de un 0.\n La suma de los numeros ingresados es igual a {suma_ingresados}\n Por ultimo, el promedio de los numeros ingresados es igual a {promedio}")
 
 """
 Ejercicio 059
@@ -144,6 +144,23 @@ while estado_actual_dia != FINALIZADO:
 
 total_ventas = total_cheque + total_efectivo + total_tarjeta
 print(f"Total ventas: {total_ventas}, Total Efectivo: {total_efectivo}, Total Cheque: {total_cheque}, Total Tarjeta: {total_tarjeta}")
+
+"""
+Ejercicio 061
+
+Escribir un programa que permita ingresar un numero entero positivo (natural) y 
+mostrar su factorial. El factorial de un numero es el producto de todos los 
+numeros enteros desde 1 hasta el numero ingresado.
+Por ejemplo, el factorial de 5 es 1 * 2 * 3 * 4 * 5
+"""
+
+numero = int(input("Ingrese el numero a calcular el factorial: "))
+factorial = 1
+
+for i in range(1, numero+1):
+    factorial *= i
+
+print(f"El factorial de {numero} es {factorial}")
 
 
 
