@@ -57,4 +57,28 @@ elif b % a == 0:
 else:
         print(f"El numero {b} no es divisible por {a}")
 
+from random import randint # (otra manera de importar el modulo random y llamar a randint)
+
+
+"""
+Ejercicio 042
+
+Escribir un programa que lea numeros enteros hasta que se ingrese un 0, y muestre el promedio
+de los numeros ingresados
+"""
+
+CERO = 0
+numero = int(input("Ingrese un numero entero: "))
+cant_ingresados = 0
+suma_ingresados = 0
+
+while numero != CERO:
+    cant_ingresados += 1
+    suma_ingresados += numero
+    numero = int(input("Ingrese un numero entero: "))
+
+promedio = suma_ingresados / cant_ingresados
+print(f"Se ingresaron {cant_ingresados} numeros hasta la primera aparicion de un 0.\n La suma de los numeros ingresados es igual a {suma_ingresados}\n Por ultimo, el promedio de los numeros ingresados es igual a {promedio}")
+
+
 
